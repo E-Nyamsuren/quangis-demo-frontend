@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+    
+    {% include "blocklyUI/head.html" %}
+   
+    <body onload='init("docs-algebra")'>
+        <div class="pageContainer">
+            {% include "blocklyUI/nav-bar.html" %}
+
+            <div id="docSidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            </div>
+            
+            <div class="docs section" id="main">
+                <!-- [SC] navigation button -->
+                <button onclick="openNav()" class="floatBtn" id="openbtn" title="Open side nav menu">&#9776;</button>
+                
+                <!-- [SC] floating button to the top -->
+                <button onclick="topFunction()" class="floatBtn" id="toTopBtn" title="Go to top">&#8593;</button>
+            </div>
+            
+            {% include "blocklyUI/footer.html" %}
+        </div>
+    </body>
+</html>
